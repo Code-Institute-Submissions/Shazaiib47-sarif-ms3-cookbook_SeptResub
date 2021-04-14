@@ -8,13 +8,15 @@
 </head>
 
 <body>
-    {% for recipes in recipe %}
-    {{ recipes.recipe_name }}<br>
-    {{ recipes.recipe.category }}<br>
-    {{ recipes.recipe_description }}<br>
-    {{ recipes.recipe_made }}<br>
-    {{ recipes.recipe_added }}<br>
+
+    {% for recipe in recipes %}
+    {{ recipe_name }}<br>
+    {{ recipe.category }}<br>
+    {{ recipe_description }}<br>
+    {{ recipe_made }}<br>
+    {{ recipe_added }}<br>
     {% endfor %}
+
 </body>
 
 </html>
