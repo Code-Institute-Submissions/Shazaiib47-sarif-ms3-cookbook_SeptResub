@@ -106,7 +106,7 @@ def add_recipe():
         recipe = {
             "recipe_category": request.form.get("recipe_category"),
             "recipe_name": request.form.get("recipe_name"),
-            "recipe_description": request.form.getlist("recipe_description"),
+            "recipe_description": request.form.get("recipe_description"),
             "recipe_made": recipe_made,
             "recipe_added": request.form.get("recipe_added"),
             "created_by": session["user"]
@@ -117,7 +117,6 @@ def add_recipe():
 
     recipes = mongo.db.recipe_categories.find().sort("recipe_categories", 1)
     return render_template("add_recipe.html", recipes=recipes)
-
 
 
 if __name__ == "__main__":
