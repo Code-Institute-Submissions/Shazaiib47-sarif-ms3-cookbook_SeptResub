@@ -1,28 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-    {% for recipe in recipes %}
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.recipe_category }}<br>
-        {{ recipe.recipe_description }}<br>
-        {{ recipe.recipe_made }}<br>
-        {{ recipe.recipe_added }}<br>
-    {% endfor %}
-
     <ul class="collapsible">
+        {% for recipe in recipes %}
         <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>First</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header white-text light-blue darken-4 text-shadow">
+                <i class="fas fa-caret-down"></i>
+                <strong>{{ recipe.recipe_name }}</strong> : {{ recipe.recipe_made }}
+                {% if recipe.recipe_made == "on" %}
+                    <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                        data-position="right" data-tooltip="I have made this"></i>
+                {% endif %}
+            </div>
+            <div class="collapsible-body">
+                <strong>{{ recipe.recipe_category }}</strong>
+                <p>{{ recipe.recipe_description }}</p>
+            </div>
         </li>
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>Second</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>Third</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+        {% endfor %}
       </ul>
             
 
