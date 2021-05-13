@@ -3,16 +3,20 @@
 
     <h3 class="light-blue-text text-darken-4 center-align">Edit a Recipe</h3>
 
-        <div class="row">
+        <div class="row card-panel grey lighten-5">
             <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
                 <!--recipe category selection-->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                         <select id="recipe_category" name="recipe_category" class="validate" required>
-                            <option value="" disabled selected>Choose your option</option>
+                            <option value="" disabled>Choose A Category</option>
                             {% for recipe in recipes %}
-                                 <option value="{{ recipe.recipe_category }}">{{ recipe.recipe_category }}</option>
+                                {% if recipe.recipe_categories == recipe.recipe_categories %}
+                                    <option value="{{ recipe.recipe_category }}" selected>{{ recipe.recipe_categories }}</option>
+                                {% else %}
+                                    <option value="{{ recipe.recipe_category }}">{{ recipe.recipe_categories }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                         <label for="recipe_category">Recipe Categories</label>
@@ -23,7 +27,7 @@
                 <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                 <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50" 
-                    type="text" class="validate" required>
+                    value="{{ recipe.recipe_name }}" type="text" class="validate" required>
                 <label for="recipe_name">Recipe Name</label>
                 </div>
             </div>
@@ -31,8 +35,10 @@
             <div class="row">
                 <div class="input-field col s12">
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                <textarea id="recipe_description" name="task_description" minlength="5"
-                    maxlength="200" class="materialize-textarea validate" required></textarea>
+                <textarea id="recipe_description" name="recipe_description" minlength="5"
+                    maxlength="200" class="materialize-textarea validate" required>
+                {{- recipe.recipe_description -}}
+                </textarea>
                 <label for="recipe_description">Recipe Description</label>
                 </div>
             </div>
@@ -40,8 +46,9 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calender alt prefix light-blue-text text-darken-4"></i>
-                    <input id="date_added" name="date_added" type="text" class="datepicker validate" required>
-                    <label for="date_added">Recipe Added</label>
+                    <input id="recipe_added" name="recipe_added" type="text"
+                        value="{{ recipe.recipe_added }}" class="datepicker validate" required>
+                    <label for="recipe_added">Recipe Added</label>
                 </div>
             </div>
             <!--If the user has made the recipe switch-->
@@ -50,8 +57,12 @@
                     <div class="switch">
                         <i class="fas fa-exclamation-circle prefix light-blue-text text-darken-4"></i>
                         <label for="recipe_made">
-                        <input type="checkbox" id="recipe_made" name="recipe_made">
-                        <span class="lever"></span>
+                            {% if recipe.recipe_made == "on" %}
+                                <input type="checkbox" id="recipe_made" name="recipe_made" checked>
+                            {% else %}
+                                <input type="checkbox" id="recipe_made" name="recipe_made">
+                            {% endif %}
+                            <span class="lever"></span>
                         Have Made
                         </label>
                     </div>
@@ -60,6 +71,10 @@
                 <!--Button used to submit recipe-->
                 <div class="row">
                     <div class="col s12 center-align">
+                        <!--cancel changes button-->
+                        <a href="{{ url_for('recipes') }}" class="btn-large red text-shadow">
+                            Cancel Changes <i class="fas fa-times-circle right"></i>
+                        </a>
                         <button type="submit" class="btn-large light-blue darken-1 text-shadow">
                             Edit Recipe <i class="fas fa-edit"></i>
                         </button>
