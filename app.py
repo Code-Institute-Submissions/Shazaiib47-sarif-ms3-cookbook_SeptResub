@@ -166,6 +166,20 @@ def add_category():
     return render_template("add_recipe_category.html")
 
 
+@app.route("/edit_recipe_category/<category_id>", methods=["GET", "POST"])
+def edit_category(category_id):
+    if request.method == "POST":
+        submit = {
+            "recipe_category": request.form.get("recipe_category")
+        }
+        mongo.db.recipe_categories.update({"_id": ObjectId(category_id)}, submit)
+        flash("Recipe Category Successfully Updated!")
+        return redirect(url_for("get_categories"))
+
+    category = mongo.db.recipe_categories.find_one({"_id": ObjectId(category_id)})
+    return render_template("edit_recipe_category.html", category=category)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
