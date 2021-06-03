@@ -65,13 +65,13 @@ def login():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            # Validates that the hashed password matches what the user has typed.
+            # Validates that the hashed password matches what the user has.
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}.".format(
+                    existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}.".format(
                         request.form.get("username")))
-                    return redirect(url_for(
+                return redirect(url_for(
                         "profile", username=session["user"]))
             else:
                 # triggers if password is matched incorrectly
@@ -129,7 +129,7 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
-    
+
     if request.method == "POST":
         recipe_made = "on" if request.form.get("recipe_made") else "off"
         submit = {
@@ -141,12 +141,13 @@ def edit_recipe(recipe_id):
             "recipe_added": request.form.get("recipe_added"),
             "created_by": session["user"]
         }
-        mongo.db.recipes.update({"_id": ObjectId(recipe_id)},submit)
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe Successfully Updated!")
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.recipe_categories.find().sort("recipe_category", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+    return render_template("edit_recipe.html", recipe=recipe,
+                           categories=categories)
 
 
 @app.route("/delete_recipe/<recipe_id>")
@@ -158,7 +159,8 @@ def delete_recipe(recipe_id):
 
 @app.route("/get_categories")
 def get_categories():
-    categories = list(mongo.db.recipe_categories.find().sort("recipe_category", 1))
+    categories = list(mongo.db.recipe_categories.find().sort
+                      ("recipe_category", 1))
     return render_template("categories.html", categories=categories)
 
 
@@ -181,11 +183,13 @@ def edit_category(category_id):
         submit = {
             "recipe_category": request.form.get("recipe_category")
         }
-        mongo.db.recipe_categories.update({"_id": ObjectId(category_id)}, submit)
+        mongo.db.recipe_categories.update({"_id": ObjectId
+                                          (category_id)}, submit)
         flash("Recipe Category Successfully Updated!")
         return redirect(url_for("get_categories"))
 
-    category = mongo.db.recipe_categories.find_one({"_id": ObjectId(category_id)})
+    category = mongo.db.recipe_categories.find_one(
+                        {"_id": ObjectId(category_id)})
     return render_template("edit_recipe_category.html", category=category)
 
 
