@@ -12,7 +12,6 @@ $(document).ready(function(){
       }
     });
 
-
     var elem = $('.carousel.carousel-slider');
     var carousel = elem.carousel({
         fullWidth: true,
