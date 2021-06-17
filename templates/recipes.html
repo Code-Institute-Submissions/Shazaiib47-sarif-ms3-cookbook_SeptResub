@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
- 
-    <div class="carousel carousel-slider" style="position: absolute; margin-top: 64px;">
+ <div class="row">
+    <div class="carousel carousel-slider" style="position: absolute; margin-top: 64px;max-height:40vh; height:40vh">
         <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
         <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
         <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
         <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
     </div>
+</div>
 
     <div style="margin-top: 400px;">
 
@@ -24,7 +25,7 @@
       </div>
 
     <div class="row card-panel grey lighten-5">
-        <form action="{{ url_for('search') }}" method="post" class="col s12">
+         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row center-align">
                 <div class="input-field col s12 m8">
                     <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
@@ -38,6 +39,7 @@
                 </div>
             </div>
         </form>
+
     </div>
 
     {% if recipes|length > 0 %}
@@ -66,7 +68,8 @@
                 <p>{{ recipe.recipe_description }}</p>
                 <p><em>by: {{recipe.created_by }}</em></p>
             </div>
-                <div class="col s4">
+                <div class="col s4"
+                >
                     {% if recipe.image_url != "" %}
                     <img src="{{ recipe.image_url }}" alt="{{ recipe.name }}" width="100px" height="100px">
                     {% endif %}
