@@ -1,31 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
- <div class="row">
+<div class="row">
     <div class="carousel carousel-slider" style="position: absolute; margin-top: 64px;max-height:40vh; height:40vh">
-        <a class="carousel-item" href="#one!"><img src="https://offloadmedia.feverup.com/secretmanchester.com/wp-content/uploads/2020/02/17100232/best-sushi-in-manchester-1024x576.png"></a>
-        <a class="carousel-item" href="#two!"><img src="https://d1wv60jaas5mse.cloudfront.net/images/uploads/production/post_images/74597fec3f8a17_Ramen%20close%20up%20with%20spring%20onions.jpg"></a>
-        <a class="carousel-item" href="#three!"><img src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/01/header-23.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="https://eskipaper.com/images/dessert-wallpaper-hd-1.jpg"></a>
+        <a class="carousel-item" href="#one!"><img
+                src="https://offloadmedia.feverup.com/secretmanchester.com/wp-content/uploads/2020/02/17100232/best-sushi-in-manchester-1024x576.png" width="auto"></a>
+        <a class="carousel-item" href="#two!"><img
+                src="https://d1wv60jaas5mse.cloudfront.net/images/uploads/production/post_images/74597fec3f8a17_Ramen%20close%20up%20with%20spring%20onions.jpg" width="auto"></a>
+        <a class="carousel-item" href="#three!"><img
+                src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/01/header-23.jpg" width="auto"></a>
+        <a class="carousel-item" href="#four!"><img src="https://eskipaper.com/images/dessert-wallpaper-hd-1.jpg" width="auto"></a>
     </div>
 </div>
 
-    <div style="margin-top: 400px;">
+<div class="push-down">
 
     <h3 class="light-blue-text text-darken-4 center-align">All Recipes</h3>
 
     <div class="mid-center">
         <div class="col s12 m5">
-          <div class="card-panel red darken-4">
-            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            </span>
-          </div>
+            <div class="card-panel red darken-4">
+                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively. I am similar to what is called a
+                    panel in other frameworks.
+                </span>
+            </div>
         </div>
-      </div>
+    </div>
 
     <div class="row card-panel grey lighten-5">
-         <form action="{{ url_for('search') }}" method="post" class="col s12">
+        <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row center-align">
                 <div class="input-field col s12 m8">
                     <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
@@ -50,26 +54,27 @@
                 <div class="col s3">
                     <i class="fas fa-caret-down"></i>
                     {% if session.user|lower == recipe.created_by|lower %}
-                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small green accent-4">Done</a>
-                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
+                        class="btn-small green accent-4">Done</a>
+                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
+                        class="btn-small light-blue lighten-1">Edit</a>
                     {% endif %}
                 </div>
                 <div class="col s9">
-                    <strong>{{ recipe.recipe_name }}</strong> : 
-                {% if recipe.recipe_made == "on" %}
-                    <i class="fas fa-check-circle light-blue-text text-lighten-2 tooltipped"
-                        data-position="right" data-tooltip="I have made this"></i>
-                {% endif %}
+                    <strong>{{ recipe.recipe_name }}</strong> :
+                    {% if recipe.recipe_made == "on" %}
+                    <i class="fas fa-check-circle light-blue-text text-lighten-2 tooltipped" data-position="right"
+                        data-tooltip="I have made this"></i>
+                    {% endif %}
                 </div>
             </div>
-            <div class="collapsible-body row"> 
+            <div class="collapsible-body row">
                 <div class="clsol s8">
-                <strong>{{ recipe.recipe_category }}</strong>
-                <p>{{ recipe.recipe_description }}</p>
-                <p><em>by: {{recipe.created_by }}</em></p>
-            </div>
-                <div class="col s4"
-                >
+                    <strong>{{ recipe.recipe_category }}</strong>
+                    <p>{{ recipe.recipe_description }}</p>
+                    <p><em>by: {{recipe.created_by }}</em></p>
+                </div>
+                <div class="col s4">
                     {% if recipe.image_url != "" %}
                     <img src="{{ recipe.image_url }}" alt="{{ recipe.name }}" width="100px" height="100px">
                     {% endif %}
@@ -77,10 +82,10 @@
             </div>
         </li>
         {% endfor %}
-      </ul>
-      {% else %}
-      <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
-      {% endif %}
-    </div>
+    </ul>
+    {% else %}
+    <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+    {% endif %}
+</div>
 
 {% endblock %}
