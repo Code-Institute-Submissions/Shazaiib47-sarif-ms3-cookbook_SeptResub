@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     var elem = $('.carousel.carousel-slider');
     var carousel = elem.carousel({
-        fullWidth: true,
+        // fullWidth: true,
         indicators: true,
         duration: 200,
       });
