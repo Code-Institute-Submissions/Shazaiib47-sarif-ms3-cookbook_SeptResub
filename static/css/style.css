@@ -29,3 +29,18 @@
     margin: auto;
     padding: 15px;
 }
+
+.icon-link {
+    margin-right: 2vw;
+    font-size: 25px;
+}
+
+.push-down {
+    margin-top: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+    .push-down {
+        margin-top: 400px;
+    }
+}
