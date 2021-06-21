@@ -22,7 +22,6 @@ $(document).ready(function(){
       var instance = M.Carousel.getInstance(elem);
       setInterval(function(){
          instance.next();
-         console.log('hello');
         }, 3000);
 
     validateMaterializeSelect();
