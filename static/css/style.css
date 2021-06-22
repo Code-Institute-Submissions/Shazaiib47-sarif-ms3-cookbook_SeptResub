@@ -78,3 +78,21 @@ body {
         display: block;
     }
 }
+
+.viewall-btn{
+    margin:2.5vh auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .viewall-btn{
+    margin-left: 2vw;
+    }
+}
+
+.modal-content {
+    background-color: red;
+}
+
+.modal-footer {
+    background-color: red;
+}
