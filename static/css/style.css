@@ -1,5 +1,7 @@
+/* Font Selection for Nav */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
+/* Body Styling to match footer and to ensure it is fixed */
 body {
     display: flex;
     min-height: 100vh;
@@ -10,7 +12,7 @@ body {
     flex: 1 0 auto;
   }
 
-
+/* Brand Logo(Nav Title) Styling w/ Media Query*/
 .brand-logo {
     font-family: 'Merienda', cursive;
     font-size: 20px!important;
@@ -22,6 +24,7 @@ body {
     }
 }
 
+/*Extended Nav Styling */
 .nav-extended {
     font-family: 'Merienda', cursive;
 }
@@ -30,10 +33,12 @@ body {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Flash Messages styling */
 .flashes h4 {
     line-height: 2;
 }
 
+/* Button styling that is applied to recipe buttons */
 .btn-small {
     margin: 5px;
 }
@@ -43,6 +48,7 @@ body {
     line-height: 42px;
 }
 
+/* Styling for the card above search on home page that shows websites purpose */
 .mid-center {
     margin: auto;
     padding: 15px;
@@ -53,6 +59,7 @@ body {
     font-size: 25px;
 }
 
+/* Push down styling for formatting including Media Queries */
 .push-down {
     margin-top: 250px;
 }
@@ -63,6 +70,7 @@ body {
     }
 }
 
+/* Carousel Styling for both Mobile and Desktop including Media Queries */
 .carousel-mobile {
     display: block;
 }
@@ -79,10 +87,12 @@ body {
     }
 }
 
+/* Modal Content button styling */
 .viewall-btn{
     margin:2.5vh auto;
 }
 
+/* Media Queries for viewall button on Modal Structure as well as the content in it to match website theme */
 @media only screen and (min-width: 600px) {
     .viewall-btn{
     margin-left: 2vw;
