@@ -13,6 +13,7 @@ $(document).ready(function () {
             done: "Select"
         }
     });
+    $('.modal').modal();
 
     var mobileCarousel = $('.carousel-mobile.carousel.carousel-slider');
     mobileCarousel.carousel({
