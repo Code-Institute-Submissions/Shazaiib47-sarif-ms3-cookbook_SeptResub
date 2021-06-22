@@ -1,43 +1,62 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!--Carousel that will display if user is on desktop variant-->
 <div class="row">
-    <div class="carousel carousel-desktop carousel-slider" style="position: absolute; margin-top: 64px;max-height:40vh; height:40vh">
-        <a class="carousel-item" href="#one!"><img
-                src="../static/images/pexels-prince-photos-3054690.jpg" width="auto"></a>
-        <a class="carousel-item" href="#two!"><img
-                src="../static/images/pexels-photo-670705.jpeg" width="auto"></a>
+    <div class="carousel carousel-desktop carousel-slider"
+        style="position: absolute; margin-top: 64px;max-height:40vh; height:40vh">
+        <a class="carousel-item" href="#one!"><img src="../static/images/pexels-prince-photos-3054690.jpg"
+                width="auto"></a>
+        <a class="carousel-item" href="#two!"><img src="../static/images/pexels-photo-670705.jpeg" width="auto"></a>
         <a class="carousel-item" href="#three!"><img
                 src="https://www.thegreatcoursesdaily.com/wp-content/uploads/2020/01/header-23.jpg" width="auto"></a>
         <a class="carousel-item" href="#four!"><img src="../static/images/pexels-japanese-dessert.jpg" width="auto"></a>
     </div>
-    <div class="carousel carousel-mobile carousel-slider" style="position: absolute; margin-top: 64px;max-height:40vh; height:40vh">
+<!--End desktop carousel showcase-->
+
+    <!--Carousel that will display when user navigates to mobile view w/ new images-->
+    <div class="carousel carousel-mobile carousel-slider"
+        style="position: absolute; margin-top: 64px;max-height:40vh; height:40vh">
         <a class="carousel-item" href="#one!"><img
-                src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto"></a>
+                src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                width="auto"></a>
         <a class="carousel-item" href="#two!"><img
-                src="https://images.pexels.com/photos/4071397/pexels-photo-4071397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto"></a>
+                src="https://images.pexels.com/photos/4071397/pexels-photo-4071397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                width="auto"></a>
         <a class="carousel-item" href="#three!"><img
-                src="https://images.pexels.com/photos/858508/pexels-photo-858508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto"></a>
-        <a class="carousel-item" href="#four!"><img src="https://images.pexels.com/photos/2682672/pexels-photo-2682672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto"></a>
+                src="https://images.pexels.com/photos/858508/pexels-photo-858508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                width="auto"></a>
+        <a class="carousel-item" href="#four!"><img
+                src="https://images.pexels.com/photos/2682672/pexels-photo-2682672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                width="auto"></a>
     </div>
 </div>
+<!--End mobile carousel showcase w/ new images-->
 
-
+<!--Div that pushes down content for formatting-->
 <div class="push-down">
+<!--End div for formatting-->
 
+    <!--H3 Formatting for subheading-->
     <h3 class="red-text text-darken-4 center-align">All Recipes</h3>
+    <!--End H3 Formatting for subheading-->
 
+    <!--Code that illustarates the mid card that is shown on home page above recipes with description of website and Tokyo cuisine-->
     <div class="mid-center">
         <div class="col s12 m5">
             <div class="card-panel red darken-4">
-                <span class="white-text center">Enter Tokyo. A city widely renowed for it's bustling culture, history as well as 
-                    the atmosphere and above all; a city full of fine dining rated by 5 star michelin chefs. 
-                    <p class="center">Explore this online cookbook to experience the best cuisine Tokyo has to offer, as well as some to follow and make for yourself!</p>
+                <span class="white-text center">Enter Tokyo. A city widely renowed for it's bustling culture, history as
+                    well as
+                    the atmosphere and above all; a city full of fine dining rated by 5 star michelin chefs.
+                    <p class="center">Explore this online cookbook to experience the best cuisine Tokyo has to offer, as
+                        well as some to follow and make for yourself!</p>
                 </span>
             </div>
         </div>
     </div>
+    <!--End mid card code to illustrate what it is about-->
 
+    <!--Code to show search conditions with buttons as well as searching through websites-->
     <div class="row card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row center-align">
@@ -50,14 +69,16 @@
                     <button type="submit" class="red lighten-2 btn text-shadow">
                         <i class="fas fa-search left"></i> Search
                     </button>
-                    <a href="/get_recipes"><button class="red lighten-2 btn text-shadow viewall-btn">View All</button></a>
+                    <a href="/get_recipes"><button class="red lighten-2 btn text-shadow viewall-btn">View
+                            All</button></a>
 
                 </div>
             </div>
         </form>
-
     </div>
+    <!--End recipe searching code-->
 
+    <!--Collapsible Accordion that drops down with recipe listing and their conditions-->
     {% if recipes|length > 0 %}
     <ul class="collapsible">
         {% for recipe in recipes %}
@@ -66,20 +87,25 @@
                 <div class="col s3">
                     <i class="fas fa-caret-down"></i>
                     {% if session.user|lower == recipe.created_by|lower %}
-                    <a class="waves-effect waves-light red darken-2 btn modal-trigger" href="#recipe-{{ recipe._id }}">Delete</a>
+                    <a class="waves-effect waves-light red darken-2 btn modal-trigger"
+                        href="#recipe-{{ recipe._id }}">Delete</a>
                     <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}"
                         class="btn-small light-green lighten-1">Edit</a>
                     {% endif %}
                 </div>
+                <!---Modal Structure for deleting a recipe-->
                 <div id="recipe-{{ recipe._id }}" class="modal">
                     <div class="modal-content">
-                      <h4>Are you sure you want to delete this recipe?</h4>
+                        <h4>Are you sure you want to delete this recipe?</h4>
                     </div>
+                    <!--Will reveal when user clicks delete to show 2 buttons, one to confirm deletion and one to cancel-->
                     <div class="modal-footer">
                         <a class="modal-close  btn-small red black-text text-darken-4">Cancel</a>
-                      <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-close  btn-small green black-text text-darken-4">Yes</a>
+                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
+                            class="modal-close  btn-small green black-text text-darken-4">Yes</a>
                     </div>
-                  </div>
+                </div>
+                <!--States if the user has made a recipe, if they have a checkmark will appear next to the website to allow them to keep track-->
                 <div class="col s9">
                     <strong>{{ recipe.recipe_name }}</strong>
                     {% if recipe.recipe_made == "on" %}
@@ -88,12 +114,14 @@
                     {% endif %}
                 </div>
             </div>
+            <!--When expanded, this shows who made the recipe, the description as well as the category-->
             <div class="collapsible-body row">
                 <div class="col s8">
                     <strong>{{ recipe.recipe_category }}</strong>
                     <p>{{ recipe.recipe_description }}</p>
                     <p><em>by: {{recipe.created_by }}</em></p>
                 </div>
+                <!--Image URL to be shown when expanded in accordion to match the recipe-->
                 <div class="col s4">
                     {% if recipe.image_url != "" %}
                     <img src="{{ recipe.image_url }}" alt="{{ recipe.name }}" width="100px" height="100px">
@@ -104,6 +132,7 @@
         {% endfor %}
     </ul>
     {% else %}
+    <!--Code for no search results found as well as a view all recipe button-->
     <div class="center-align" style="margin-bottom:5vh">
         <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
         <a href="/get_recipes"> <button class="red lighten-2 btn text-shadow">View All</button></a>
