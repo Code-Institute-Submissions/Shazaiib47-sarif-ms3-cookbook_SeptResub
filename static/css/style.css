@@ -1,7 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
 .brand-logo {
     font-family: 'Merienda', cursive;
+    font-size: 20px!important;
+}
+@media only screen and (min-width: 600px) {
+    .brand-logo {
+        font-size: 30px!important;
+        margin-left: 5vw;
+    }
 }
 
 .nav-extended {
@@ -42,5 +60,21 @@
 @media only screen and (min-width: 600px) {
     .push-down {
         margin-top: 400px;
+    }
+}
+
+.carousel-mobile {
+    display: block;
+}
+.carousel-desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .carousel-mobile {
+        display: none;
+    }
+    .carousel-desktop {
+        display: block;
     }
 }
