@@ -1,7 +1,9 @@
 $(document).ready(function () {
+    /* Side Nav */
     $('.sidenav').sidenav({
         edge: "right"
     });
+    /* Accordion Collapsible with Form, Date Pickerr as well as the tooltip */
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
     $('select').formSelect();
@@ -15,6 +17,7 @@ $(document).ready(function () {
     });
     $('.modal').modal();
 
+    /* Mobile Carousel Config */
     var mobileCarousel = $('.carousel-mobile.carousel.carousel-slider');
     mobileCarousel.carousel({
         // fullWidth: true,
@@ -27,6 +30,7 @@ $(document).ready(function () {
         minstance.next();
     }, 3000);
 
+    /* Desktop Carousel Configuration */
     var desktopCarousel = $('.carousel-desktop.carousel.carousel-slider');
     desktopCarousel.carousel({
         // fullWidth: true,
@@ -40,6 +44,7 @@ $(document).ready(function () {
     }, 3000);
 
 
+    /* Dropdown Validation */
     validateMaterializeSelect();
 
     function validateMaterializeSelect() {
