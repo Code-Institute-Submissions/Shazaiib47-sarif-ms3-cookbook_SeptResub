@@ -1,80 +1,92 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Add a Recipe</h3>
+<h3 class="light-blue-text text-darken-4 center-align">Add a Recipe</h3>
 
+<div class="row">
+    <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+        <!--signifies recipe category selection-->
         <div class="row">
-            <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
-                <!--recipe category selection-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                        <select id="recipe_category" name="recipe_category" class="validate" required>
-                            <option value="" disabled selected>Choose your option</option>
-                            {% for recipe in recipes %}
-                                 <option value="{{ recipe.recipe_category }}">{{ recipe.recipe_category }}</option>
-                            {% endfor %}
-                        </select>
-                        <label for="recipe_category">Recipe Categories</label>
-                      </div>
-                </div>
-                <!--recipe name-->
-            <div class="row">
-                <div class="input-field col s12">
+            <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                <select id="recipe_category" name="recipe_category" class="validate" required>
+                    <option value="" disabled selected>Choose your option</option>
+                    {% for recipe in recipes %}
+                    <option value="{{ recipe.recipe_category }}">{{ recipe.recipe_category }}</option>
+                    {% endfor %}
+                </select>
+                <label for="recipe_category">Recipe Categories</label>
+            </div>
+        </div>
+        <!--End recipe category selection-->
+
+        <!--recipe name-->
+        <div class="row">
+            <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50" 
-                    type="text" class="validate" required>
+                <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50" type="text" class="validate"
+                    required>
                 <label for="recipe_name">Recipe Name</label>
-                </div>
             </div>
-            <!--recipe description-->
-            <div class="row">
-                <div class="input-field col s12">
+        </div>
+        <!--End recipe name code-->
+
+        <!--recipe description-->
+        <div class="row">
+            <div class="input-field col s12">
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                <textarea id="recipe_description" name="recipe_description" minlength="5"
-                    maxlength="200" class="materialize-textarea validate" required></textarea>
+                <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required></textarea>
                 <label for="recipe_description">Recipe Description</label>
-                </div>
             </div>
-            <!-- Adding an Image to Recipe -->
-            <div class="row">
-                <div class="input-field col s12">
+        </div>
+        <!--End recipe description code-->
+
+        <!--Adding an Image to Recipe -->
+        <div class="row">
+            <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="image_url" name="image_url"
-                    type="text" class="validate" required>
+                <input id="image_url" name="image_url" type="text" class="validate" required>
                 <label for="image_url">Add an Image URL</label>
-                </div>
             </div>
-            <!--recipe added date picker-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-calender alt prefix light-blue-text text-darken-4"></i>
-                    <input id="date_added" name="date_added" type="text" class="datepicker validate" required>
-                    <label for="date_added">Recipe Added</label>
-                </div>
+        </div>
+        <!--End image addition to recipe-->
+
+        <!--recipe added date picker-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-calender alt prefix light-blue-text text-darken-4"></i>
+                <input id="date_added" name="date_added" type="text" class="datepicker validate" required>
+                <label for="date_added">Recipe Added</label>
             </div>
-            <!--If the user has made the recipe switch-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <div class="switch">
-                        <i class="fas fa-exclamation-circle prefix light-blue-text text-darken-4"></i>
-                        <label for="recipe_made">
+        </div>
+        <!--End recipe date addition code-->
+
+        <!--If the user has made the recipe switch-->
+        <div class="row">
+            <div class="input-field col s12">
+                <div class="switch">
+                    <i class="fas fa-exclamation-circle prefix light-blue-text text-darken-4"></i>
+                    <label for="recipe_made">
                         <input type="checkbox" id="recipe_made" name="recipe_made">
                         <span class="lever"></span>
                         Have Made
-                        </label>
-                    </div>
-                </div>          
+                    </label>
                 </div>
-                <!--Button used to submit recipe-->
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <button type="submit" class="btn-large light-blue darken-1 text-shadow">
-                            Add Recipe <i class="fas fa-plus-square-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
+        <!--End code that states if user has made the recipe-->
+
+        <!--Button used to submit recipe-->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                    Add Recipe <i class="fas fa-plus-square-right"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<!--End submit recipe button code-->
 
 {% endblock %}
