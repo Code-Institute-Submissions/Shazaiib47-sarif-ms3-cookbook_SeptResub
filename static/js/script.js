@@ -1,40 +1,67 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav({edge: "right"});
+$(document).ready(function () {
+    $('.sidenav').sidenav({
+        edge: "right"
+    });
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
     $('select').formSelect();
     $('.datepicker').datepicker({
-      format: 'dd mmmm, yyyy',
-      yearRange: 3,
-      showClearBtn: true,
-      il8n: {
-          done: "Select"
-      }
+        format: 'dd mmmm, yyyy',
+        yearRange: 3,
+        showClearBtn: true,
+        il8n: {
+            done: "Select"
+        }
     });
 
-    var elem = $('.carousel.carousel-slider');
-    var carousel = elem.carousel({
+    var mobileCarousel = $('.carousel-mobile.carousel.carousel-slider');
+    mobileCarousel.carousel({
         // fullWidth: true,
         indicators: true,
         duration: 200,
-      });
+    });
 
-      var instance = M.Carousel.getInstance(elem);
-      setInterval(function(){
-          console.log("Holla");
-         instance.next();
-        }, 3000);
+    var minstance = M.Carousel.getInstance(mobileCarousel);
+    setInterval(function () {
+        minstance.next();
+    }, 3000);
+
+    var desktopCarousel = $('.carousel-desktop.carousel.carousel-slider');
+    desktopCarousel.carousel({
+        // fullWidth: true,
+        indicators: true,
+        duration: 200,
+    });
+
+    var dinstance = M.Carousel.getInstance(desktopCarousel);
+    setInterval(function () {
+        dinstance.next();
+    }, 3000);
+
 
     validateMaterializeSelect();
+
     function validateMaterializeSelect() {
-        let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
-        let classInvalid = { "border-bottom": "1px solid #f44336", "box-shadow": "0 1px 0 0 #f44336" };
+        let classValid = {
+            "border-bottom": "1px solid #4caf50",
+            "box-shadow": "0 1px 0 0 #4caf50"
+        };
+        let classInvalid = {
+            "border-bottom": "1px solid #f44336",
+            "box-shadow": "0 1px 0 0 #f44336"
+        };
         if ($("select.validate").prop("required")) {
-            $("select.validate").css({ "display": "block", "height": "0", "padding": "0", "width": "0", "position": "absolute" });
+            $("select.validate").css({
+                "display": "block",
+                "height": "0",
+                "padding": "0",
+                "width": "0",
+                "position": "absolute"
+            });
         }
         $(".select-wrapper input.select-dropdown").on("focusin", function () {
             $(this).parent(".select-wrapper").on("change", function () {
-                if ($(this).children("ul").children("li.selected:not(.disabled)").on("click", function () { })) {
+                if ($(this).children("ul").children("li.selected:not(.disabled)").on("click", function () {})) {
                     $(this).children("input").css(classValid);
                 }
             });
@@ -53,4 +80,3 @@ $(document).ready(function(){
         });
     }
 });
-        
