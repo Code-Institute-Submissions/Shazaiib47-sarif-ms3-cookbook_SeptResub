@@ -21,6 +21,7 @@ $(document).ready(function(){
 
       var instance = M.Carousel.getInstance(elem);
       setInterval(function(){
+          console.log("Holla");
          instance.next();
         }, 3000);
 
