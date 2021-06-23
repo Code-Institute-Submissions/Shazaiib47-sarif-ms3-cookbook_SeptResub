@@ -257,6 +257,16 @@ included within my project. I have tested the integrity myself to know there are
 - This project was given to a friend to break in order to find website breaking bugs that would affect the usability of it,
     nothing was done to break and website performs as expected.
 
+- A common issue that was found was that the console log would give a lot of errors if users were not on the home page of the carousel, which meant the JS code
+would act and assume something was not functioning well, as illustrated below:
+
+<h2 align="center"><img src="documentation/snapshots/console-log-error.png"></h2>
+
+- As shown above the log throws errors when not on the carousel, where the code is being used to initialise. This did not break the website as I later discovered
+the error code disappeared once the user was on the home page. It can therefore be concluded that it does not affect the usability of the website or affect validity.
+
+<h2 align="right"><img src="documentation/snapshots/console-log-after.png"></h2>
+
 ### Known Bugs/Issues/WIPs
 
 - When viewing the website on desktop but transitioning to mobile, the carousel glitches which may cause display and formatting issues,
