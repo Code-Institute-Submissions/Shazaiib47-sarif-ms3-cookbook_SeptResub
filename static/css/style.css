@@ -24,6 +24,16 @@ body {
     }
 }
 
+.reg-h3 {
+    font-family: 'Merienda', cursive;
+    color: red;
+}
+
+.red-text-h3 {
+    font-family: 'Merienda', cursive;
+    color: red;
+}
+
 /*Extended Nav Styling */
 .nav-extended {
     font-family: 'Merienda', cursive;
