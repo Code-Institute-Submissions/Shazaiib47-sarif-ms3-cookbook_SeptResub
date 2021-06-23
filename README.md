@@ -221,3 +221,14 @@ included within my project. I have tested the integrity myself to know there are
     <h2 align="center"><img src="documentation/snapshots/recipe-author-snap.png"></h2>
     - Above you can see the author clearly attached at the bottom of the recipe. In this case the name you see is mine,
     meaning I have added the recipe. However the recipe is not completely finished so you will see something else when viewing it live.
+
+ - "As an Site Owner, I want to be able to create and delete categories for the website."
+    - When the user is logged into the website, they will not be able to see a tab that Manages categories, however an admin can see this and
+    can see categories if needed, and delete if needed too.
+
+    <h2 align="left"><img src="documentation/snapshots/not-admin-snap.png"></h2>
+
+    <h2 align="right"><img src="documentation/snapshots/admin-snap.png"></h2>
+
+    - As you can see above, the 2 differences are distinguished. On my personal account I cannot see that tab, but as an admin who is logged in,
+    I can see the hidden tab.
