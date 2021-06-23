@@ -178,3 +178,12 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
         - BootStrap was used for responsiveness across devices and to ensure minimal margin errors.
     9. [Autoprefixer CSS Online](https://autoprefixer.github.io/)
         - This was used to prefix my CSS that parses it and applies vendor fixes. Used this for the front-face image not showing on iOS Devices.
+
+- ## API's and Databases Used.
+
+    1. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+        - Used for developing the website framework as well as the application itself.
+    2. [Werkzeug Security](https://werkzeug.palletsprojects.com/en/1.0.x/utils/)
+        - Used in my website for security password purposes and reinforcement.
+    3. [mongoDB](https://www.mongodb.com/)
+        - Used to provide the database backbone for my website and to distribute the database and linking it within.
