@@ -92,3 +92,17 @@ To view my live project, please click on the link below. I hope you enjoy naviga
     As shown above with the 2 image comparisons. There are quite close resemblances between the fonts, as they have the same characteristics. When 
     deciding the font, this was very important to me as I wanted the users to see as well as myself the close resemblance to Japan, not just in food; but
     in the theme and structure of website; so taking this into account was very important to me.
+
+
+# Colour Choices
+
+    - As the center of focus for my website was a cookbook with the theme of Tokyo and Japan as a whole, my colour choice judgement
+    was easy to make and narrow down to. I went with Red and White as well as their shades as this better represented the flag of Japan,
+    which also contains white and Red. Using this colour combination gave me the sense of respect as I was basing the website colour theme around the flag too.
+
+    It is very easy to add a lot of colour to a online cookbook given the wide aroma of colours used in oriental cuisine and food, but sticking with this simple
+    colour combination may seem bland to others; but it fits in well with my theme as this is better represented by.
+
+<h2 align="left"><img src="/documentation/snapshots/flag-of-japan.png"></h2>
+
+<h2 align="right"><img src="/documentation/snapshots/home-snapshot.png"></h2>
