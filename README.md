@@ -99,6 +99,8 @@ To view my live project, please click on the link below. I hope you enjoy naviga
 - As the center of focus for my website was a cookbook with the theme of Tokyo and Japan as a whole, my colour choice judgement
     was easy to make and narrow down to. I went with Red and White as well as their shades as this better represented the flag of Japan,
     which also contains white and Red. Using this colour combination gave me the sense of respect as I was basing the website colour theme around the flag too.
+    I also wanted to keep the website very minimal, not too crowdy and bustling with a lot of information. It is clear, concise and elegant in the sense that users will
+    have a good time navigating through the website.
 
 - It is very easy to add a lot of colour to a online cookbook given the wide aroma of colours used in oriental cuisine and food, but sticking with this simple
     colour combination may seem bland to others; but it fits in well with my theme as this is better represented by. Below you can find the similarities between
@@ -134,7 +136,7 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
 
 - Profile page to be updated so it shows user's recipes. (This may be implemented soon.)
 
-- Another subheading to allow users to add Ingredients to make recipe aside from description only
+- Another subheading to allow users to add Ingredients to make recipe aside from description only.
 
 - The ability to share recipe on social links with added functionality.
 
