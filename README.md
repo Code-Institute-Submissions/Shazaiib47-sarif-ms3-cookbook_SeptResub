@@ -288,3 +288,21 @@ An important thing to note is, always use a uppercase P as this is the naming co
 9. You have now successfully deployed to Heroku!
 
 ## Credits <a name="credits"></a>
+
+### Code
+
+- All code content, including HTML, CSS, JS and Python was directly inputted by myself as the developer of the project.
+
+- Inspiration to make an online cookbook came for my passion for japanese cuisine which strongly helped my motivation and interest
+for this project.
+
+### Content 
+
+- Colour properties and additional hex values was added from [Hex Colour Tool](https://www.w3schools.com/colors/colors_picker.asp).
+
+- Content of website was made in the pre planning phase by forming wireframes to project and structure how I should plan out my website.
+
+### Media
+
+- Images that were used across the website came from [Pexels](www.pexels.com) which provide copyright free images to use commercially and for
+education purposes.
