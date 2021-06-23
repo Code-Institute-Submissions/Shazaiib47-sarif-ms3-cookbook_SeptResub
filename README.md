@@ -113,7 +113,7 @@ To view my live project, please click on the link below. I hope you enjoy naviga
 <h2 align="center"><img src="/documentation/snapshots/colour-palette.png"></h2>
 
 
-## Wireframes <a name="wireframes></a>
+## Wireframes <a name="wireframes"></a>
 
 - Wireframes for this project were developed and created in [Balsamiq](https://balsamiq.com).
 Comparing the live version to the wireframes, there are no huge changes, as the ones I have included, include both the main design
