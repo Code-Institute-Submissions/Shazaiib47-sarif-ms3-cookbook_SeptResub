@@ -27,6 +27,6 @@ as well as my mental capacity, I could only do so much without the help of fello
 
 This project was done without the help of these people and was done through tough times, however I am proud of continuing this given I was battling depression, anxiety
 as well as other factors that had affected my workrate through this milestone project. I am content with where it is but I myself will still continue updating this even 
-though I know the outcome of the project. I am aware of what will happen but I will continue to persevere and work my hardest through this. 
+though I know the outcome of the project. I am aware of what will happen but I will continue to persevere and work my hardest through this. Above all, I hope you thoroughly enjoy reading the documentation that made this website as well as the challenges I had faced.
 
 Thank you for Reading.
