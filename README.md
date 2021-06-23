@@ -288,6 +288,15 @@ the error code disappeared once the user was on the home page. It can therefore 
 
 <h2 align="right"><img src="documentation/snapshots/console-log-after.png"></h2>
 
+- Whenever a User adds a recipe, the flash message that displays on screen is hidden behind the carousel quite faintly. This is due to the positioning of the message.
+I have not altered this, as if i was to do so, I would have to alter it for every message as well as adapting it for mobile view. A workaround is that
+users can see their added recipe by scrolling down onto the accordion to see it.
+
+<h2 align="center"><img src="documentation/snapshots/message-behind.png"></h2>
+
+- This is currently being investigated as I am trying to find a way where it can be displayed differently or the position can be altered without messing anything else
+up that may break the website.
+
 ## Deployment <a name="deployment"></a>
 
 ### Github Pages
