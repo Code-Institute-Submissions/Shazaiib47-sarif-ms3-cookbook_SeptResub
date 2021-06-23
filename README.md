@@ -137,3 +137,44 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
 - Another subheading to allow users to add Ingredients to make recipe aside from description only
 
 - The ability to share recipe on social links with added functionality.
+
+## Technologies Used <a name="techused"></a>
+
+- ### Languages Used
+
+    - [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5).
+        - Used within the website as the main programming language to implement the text and the structure.
+    
+    - [CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+        - Used to style the elements and variables contained within the website, mainly the cards, font, colour as well as
+        added animations and transitions.
+    
+    - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+        - Used JS to implement the code to bring the webite together through functions used in calender, accordion as well as
+        the carousel, as well as working as intended.
+    
+    - [Python](https://www.python.org/)
+        - Python programming was used to allow me to integrate the systems together seamlessly.
+
+- ## Frameworks, Programs, Libraries and Tools Used.
+
+    1. [Google Fonts](https://fonts.google.com)
+        - Google Fonts Website was used to import the 'Spectral SC' font into the CSS file to be used within
+        the game.
+    2.  [Git](https://git-scm.com/)
+        - Git was used for version control by using the gitpod terminal to commit, add and push changes for my project to Github.
+    3.  [GitHub](https://github.com)
+        - GitHub was used to store the code from the project after it was pushed via Git.
+    4.  [Balsamiq](https://balsamiq.com/)
+        - Balsamiq was used to create the wireframes during the design and initial process.
+    5.  [HTML Formatter](https://www.freeformatter.com/html-formatter.html)
+        - HTML Formatting tool was used to beautify and indent the HTML Code for the game.
+    6.  [CSS Formatter](https://www.freeformatter.com/css-beautifier.html)
+        - CSS Formatting tool was used to correctly indent and format the CSS within the style.css file.
+    7.  [jQuery](https://jquery.com/)
+        - jQuery library was used to make HTML and the JS much easier to use and implement via their API.
+            This made implementing event handling, animations and manipulating much easier.
+    8.  [BootStrap](https://www.bootstrapcdn.com/)
+        - BootStrap was used for responsiveness across devices and to ensure minimal margin errors.
+    9. [Autoprefixer CSS Online](https://autoprefixer.github.io/)
+        - This was used to prefix my CSS that parses it and applies vendor fixes. Used this for the front-face image not showing on iOS Devices.
