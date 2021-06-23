@@ -41,6 +41,12 @@ insight as to what Japanese food consists of and how it looks like.
 Japanese cuisine is widely known for its healthy ingredient usage, as well as being recognised for its cultural significance, so therefore It promotes healthy living through
 the use of healthy food via their ingredients. This in turn is great as I wanted to focus my online cookbook around this, to promote healthy living and eating.
 
+- ### Project Goal
+
+Japanese food and in particular their cuisine has always been a passion of mine. My aim with this project was to share my love of japanese oriental cuisine with others in hopes
+of them getting a glimpse of the types of food they have to offer and if given the chance by trying it too. I know there are many others out there who
+enjoy oriental food and I hope to see a variety of recipes being uploaded by users to showcase to people who are passing by the website as well as active users.
+
 To view my live project, please click on the link below. I hope you enjoy navigating through the great foods Tokyo has to offer!
 
 [View My Live Project Here!](https://sarif-ms3-cookbook.herokuapp.com/)
