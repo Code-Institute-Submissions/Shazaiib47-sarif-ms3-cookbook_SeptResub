@@ -241,3 +241,15 @@ included within my project. I have tested the integrity myself to know there are
 
 - This project was given to a friend to break in order to find website breaking bugs that would affect the usability of it,
     nothing was done to break and website performs as expected.
+
+### Known Bugs
+
+- When viewing the website on desktop but transitioning to mobile, the carousel glitches which may cause display and formatting issues,
+    this may be due to the carousel not being able to render due to size of the device. But viewing the website from a handheld device directly
+    negates this bug and performs well. This may not be a bug, which is the reason for 2 carousels added, one for mobile and one for desktop to stop
+    this issue from happening. An image is attached below to showcase what is being meant.
+
+    <h2 align="center"><img src="documentation/snapshots/formatting-issue-mobile-view-devtools.png"></h2>
+
+    - As you can see above, this is the problem that occurs, However when conferring with a friend as well as a Dev from CI, I have been told this is 
+        expected as the website has not been hard loaded to showcase the mobile view. In a way this is not a bug but has been added as a disclaimer to some.
