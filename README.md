@@ -279,10 +279,10 @@ An important thing to note is, always use a uppercase P as this is the naming co
 5. Create the new python project within the pipeline.
 6. Link the project through the means of your designated Github Repo within the deployment section of Heroku.
 7. Navigate to Heroku sesttings and reveal config vars in order to set up the following within the config vars.
-        - _IP = 0.0.0.0
-        - MONGO_DBNAME = [Name of your Database]
-        - MONGO_URI = mongodb+srv://:@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
-        - PORT = 5000
-        - SECRET_KEY = [your_secret_key_here]
+    - _IP = 0.0.0.0
+    - MONGO_DBNAME = [Name of your Database]
+    - MONGO_URI = mongodb+srv://:@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+    - PORT = 5000
+    - SECRET_KEY = [your_secret_key_here]
 8. Go back to deploy section whilst closing config vars and then select the master branch and deploy the project.
 9. You have now successfully deployed to Heroku!
