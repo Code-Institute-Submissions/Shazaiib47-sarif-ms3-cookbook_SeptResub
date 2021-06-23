@@ -317,3 +317,18 @@ for this project.
 
 - Images that were used across the website came from [Pexels](www.pexels.com) which provide copyright free images to use commercially and for
 education purposes. The images that are also used in the recipes also come from pexels, as this is encouraged to prevent copyright infringement.
+
+## Acknowledgements <a name="acknowledgements"></a>
+
+- My mentor, Aaron Sinnott. For the continuous help and tips provided to me to ensure I was doing my best. For also providing me with a basic README file to ensure I knew 
+  how to structure my own README, even though there was little communication throughout my MS3 due to personal circumstances.
+
+- [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) for the course material and their inspiration from challenges and mini projects.
+
+- Student Care at [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) for providing me and helping me with my deadline due to personal issues and problems which had led me to unfortunately delay my submission by giving me time to recoup and grieve due to personal circumstances.
+
+- My love for Japan and their cuisine to provide me with the motivation to continue building this online cookbook to further share my passion of food with others.
+
+## Disclaimer <a name="disclaimer"></a>
+
+*This project and the content involved was developed for educational purposes.*
