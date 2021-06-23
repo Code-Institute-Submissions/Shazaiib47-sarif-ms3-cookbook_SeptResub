@@ -232,3 +232,12 @@ included within my project. I have tested the integrity myself to know there are
 
     - As you can see above, the 2 differences are distinguished. On my personal account I cannot see that tab, but as an admin who is logged in,
     I can see the hidden tab.
+
+### Further Testing
+
+- This project was tested through multiple web browsers; Chrome, Firefox, Opera as well as Microsoft Edge for Validity.
+
+- This project was viewed on multiple handheld devices, iPhone XS/X/6, Desktop, Laptop(Lenovo), iPad and Huawei P30 Lite.
+
+- This project was given to a friend to break in order to find website breaking bugs that would affect the usability of it,
+    nothing was done to break and website performs as expected.
