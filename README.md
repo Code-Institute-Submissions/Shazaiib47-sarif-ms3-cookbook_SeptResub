@@ -30,3 +30,17 @@ as well as other factors that had affected my workrate through this milestone pr
 though I know the outcome of the project. I am aware of what will happen but I will continue to persevere and work my hardest through this. Above all, I hope you thoroughly enjoy reading the documentation that made this website as well as the challenges I had faced.
 
 Thank you for Reading.
+
+- ### Project Scope
+
+The project I have created here is a online cookbook with the theme of Japanese food. It is understood that covering the whole food of Japan would definitely take some huge 
+amount of time, to counter this I have focused on 1 city in Japan, the heart of food; which is Tokyo.
+The premise of this cookbook is to allow users to delve into the recipes and the great food of Japan by reading recipe additions added by users, as well as giving them the
+insight as to what Japanese food consists of and how it looks like.
+
+Japanese cuisine is widely known for its healthy ingredient usage, as well as being recognised for its cultural significance, so therefore It promotes healthy living through
+the use of healthy food via their ingredients. This in turn is great as I wanted to focus my online cookbook around this, to promote healthy living and eating.
+
+To view my live project, please click on the link below. I hope you enjoy navigating through the great foods Tokyo has to offer!
+
+[View My Live Project Here!](https://sarif-ms3-cookbook.herokuapp.com/)
