@@ -24,12 +24,7 @@ body {
     }
 }
 
-.reg-h3 {
-    font-family: 'Merienda', cursive;
-    color: red;
-}
-
-.red-text-h3 {
+h3 {
     font-family: 'Merienda', cursive;
     color: red;
 }
