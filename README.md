@@ -109,3 +109,13 @@ To view my live project, please click on the link below. I hope you enjoy naviga
 <h2 align="right"><img src="/documentation/snapshots/home-snapshot.png"></h2>
 
 <h2 align="center"><img src="/documentation/snapshots/colour-palette.png"></h2>
+
+
+## Wireframes <a name="wireframes></a>
+
+- Wireframes for this project were developed and created in [Balsamiq](https://balsamiq.com).
+Comparing the live version to the wireframes, there are no huge changes, as the ones I have included, include both the main design
+as well as an alternate design if something was to not go my way. There are massive changes that impact the usability of the website,
+but I have kept the main goal of the wireframes in mind whilst developing the website.
+
+- Wireframes for the project can be found [here](documentation/ms3-wireframes-with-alternate-design.pdf)..
