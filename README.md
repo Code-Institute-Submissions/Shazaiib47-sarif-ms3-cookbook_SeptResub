@@ -174,9 +174,7 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
     7.  [jQuery](https://jquery.com/)
         - jQuery library was used to make HTML and the JS much easier to use and implement via their API.
             This made implementing event handling, animations and manipulating much easier.
-    8.  [BootStrap](https://www.bootstrapcdn.com/)
-        - BootStrap was used for responsiveness across devices and to ensure minimal margin errors.
-    9. [Autoprefixer CSS Online](https://autoprefixer.github.io/)
+    8. [Autoprefixer CSS Online](https://autoprefixer.github.io/)
         - This was used to prefix my CSS that parses it and applies vendor fixes. Used this for the front-face image not showing on iOS Devices.
 
 - ## API's and Databases Used.
@@ -187,3 +185,19 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
         - Used in my website for security password purposes and reinforcement.
     3. [mongoDB](https://www.mongodb.com/)
         - Used to provide the database backbone for my website and to distribute the database and linking it within.
+
+
+## Testing <a name="testing"></a>
+
+Three tools were used to validate and test the integrity of my project:
+
+[W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- This tool was used to validate and check the integrity of the CSS File included in my project.
+
+[W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+- This tool was used to validate the HTML Files in my project and checks for any warnings and errors. As there are a lot of HTML files
+included within my project. I have tested the integrity myself to know there are no errors or bugs, but I have included the test results of 
+"base.html" as well as "recipes.html" to provide evident testing.
+
+[JSHint](https://jshint.com/)
+- This tool was used to validate the JavaScript file and to scan for any errors shown throughout the website.
