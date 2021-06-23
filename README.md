@@ -305,4 +305,4 @@ for this project.
 ### Media
 
 - Images that were used across the website came from [Pexels](www.pexels.com) which provide copyright free images to use commercially and for
-education purposes.
+education purposes. The images that are also used in the recipes also come from pexels, as this is encouraged to prevent copyright infringement.
