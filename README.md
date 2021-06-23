@@ -325,6 +325,9 @@ for this project.
 - Images that were used across the website came from [Pexels](www.pexels.com) which provide copyright free images to use commercially and for
 education purposes. The images that are also used in the recipes also come from pexels, as this is encouraged to prevent copyright infringement.
 
+- The recipes already included were from [One Green Planet](https://www.onegreenplanet.org/vegan-recipe/spicy-teriyaki-soba-noodle-spring-rolls/), [This Savory Vegan](https://www.thissavoryvegan.com/soba-noodle-summer-rolls-with-peanut-sauce/), [Olive Magazine](https://www.olivemagazine.com/recipes/fish-and-seafood/sashimi/) and [The Spruce Eats](https://www.thespruceeats.com/quick-shoyu-ramen-2031288) just to
+name some. These include their images as well as recipe description.
+
 ## Acknowledgements <a name="acknowledgements"></a>
 
 - My mentor, Aaron Sinnott. For the continuous help and tips provided to me to ensure I was doing my best. For also providing me with a basic README file to ensure I knew 
