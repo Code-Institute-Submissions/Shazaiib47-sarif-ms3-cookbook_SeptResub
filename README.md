@@ -212,3 +212,12 @@ included within my project. I have tested the integrity myself to know there are
     <h2 align="center"><img src="documentation/snapshots/register-unregistered.png"></h2>
 
     <h2 align="center"><img src="documentation/snapshots/register-account.png"></h2>
+
+ - "As a registered user, I want users to see my name under recipes to know who added the recipe."
+    - When a registered user successfully adds a recipe and is expanded on the accordion, they will see the recipe
+        author as this tracks the username whoever is logged in. Code reinforcement was added to ensure that users
+        see who added the recipe and their details.
+    
+    <h2 align="center"><img src="documentation/snapshots/recipe-author-snap.png"></h2>
+    - Above you can see the author clearly attached at the bottom of the recipe. In this case the name you see is mine,
+    meaning I have added the recipe. However the recipe is not completely finished so you will see something else when viewing it live.
