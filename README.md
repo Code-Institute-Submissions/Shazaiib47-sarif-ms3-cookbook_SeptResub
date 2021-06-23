@@ -101,8 +101,11 @@ To view my live project, please click on the link below. I hope you enjoy naviga
     which also contains white and Red. Using this colour combination gave me the sense of respect as I was basing the website colour theme around the flag too.
 
 - It is very easy to add a lot of colour to a online cookbook given the wide aroma of colours used in oriental cuisine and food, but sticking with this simple
-    colour combination may seem bland to others; but it fits in well with my theme as this is better represented by.
+    colour combination may seem bland to others; but it fits in well with my theme as this is better represented by. Below you can find the similarities between
+    the two as well as the colour palette used that will illustrate it better.
 
 <h2 align="left"><img src="/documentation/snapshots/flag-of-japan.png"></h2>
 
 <h2 align="right"><img src="/documentation/snapshots/home-snapshot.png"></h2>
+
+<h2 align="center"><img src="/documentation/snapshots/colour-palette.png"></h2>
