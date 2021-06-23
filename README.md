@@ -196,6 +196,8 @@ Three tools were used to validate and test the integrity of my project:
 [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 - This tool was used to validate and check the integrity of the CSS File included in my project.
 
+    Results for the validity of the CSS can be found [here](documentation/snapshots/css-validation-doc.png)
+
 [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
 - This tool was used to validate the HTML Files in my project and checks for any warnings and errors. As there are a lot of HTML files
 included within my project. I have tested the integrity myself to know there are no errors or bugs, but I have included the test results of 
@@ -203,6 +205,13 @@ included within my project. I have tested the integrity myself to know there are
 
 [JSHint](https://jshint.com/)
 - This tool was used to validate the JavaScript file and to scan for any errors shown throughout the website.
+
+    Results for the JavaScript Validator can be found [here](documentation/snapshots/js-validation-doc.png)
+
+[Python Syntax Checker](https://extendsclass.com/python-tester.html)
+- This tool was used to validate the python code entered within my project on app.py specifically.
+
+    Results for the validity of Python code can be found [here](documentation/snapshots/python-validation-doc.png)
 
 
 ### Testing Unregistered, Registered and Site Owner Stories from UX Section
