@@ -74,3 +74,21 @@ To view my live project, please click on the link below. I hope you enjoy naviga
     - As an Site Owner, I want to be able to create and delete categories for the website.
     - As an Site Owner, I want to be able to do all of the above given the priveleges and permissions.
     - As an Site Owner, I want to be able to see how many registered users are there for the website.
+
+
+# Design Choices <a name="designchoices"></a>
+
+- ### Font Selection
+
+    - As my project was centered around Japan, and in particular Tokyo, I wanted to adapt a font that matched closer with
+    the tradition, as well as closely matching it to a theme that better represented Japan as a whole.
+
+        The font I had went with in the end was [Merienda](https://fonts.googleapis.com/css2?family=Merienda&display=swap)
+
+    <h2 align="left"><img src="/documentation/snapshots/title-font-snapshot.png"></h2>
+
+    <h2 align="right"><img src="/documentation/snapshots/japanese-origin-font.jpg"></h2>
+
+    As shown above with the 2 image comparisons. There are quite close resemblances between the fonts, as they have the same characteristics. When 
+    deciding the font, this was very important to me as I wanted the users to see as well as myself the close resemblance to Japan, not just in food; but
+    in the theme and structure of website; so taking this into account was very important to me.
