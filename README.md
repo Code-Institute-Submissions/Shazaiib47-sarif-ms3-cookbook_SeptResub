@@ -50,3 +50,27 @@ enjoy oriental food and I hope to see a variety of recipes being uploaded by use
 To view my live project, please click on the link below. I hope you enjoy navigating through the great foods Tokyo has to offer!
 
 [View My Live Project Here!](https://sarif-ms3-cookbook.herokuapp.com/)
+
+# User Experience (UX) <a name="ux"></a>
+
+- ### Unregistered User Goals
+
+    - As a unregistered user, I want to be able to see a page or a button that allows me to create an account.
+    - As a unregistered user, I want to be able to notice the concept of the website easily by first glance.
+    - As a unregistered user, I want to be able to access the website from a variety of devices.
+
+- ### Registered User Goals
+
+    - As a registered user, I want to be able to edit my own recipe's if needed to.
+    - As a registered user, I want to be able to search for specific recipes within the website.
+    - As a registered user, I want to be able to get a confirmation once I have added a recipe.
+    - As a registered user, I want to be able to delete my recipes if needed to.
+    - As a registered user, I want to be able to log in using the assigned username and password.
+    - As a registered user, I want to be able to see confirmation when deleting my recipe.
+    - As a registered user, I want users to see my name under recipes to know who added the recipe.
+
+- ### Site Owner Goals
+
+    - As an Site Owner, I want to be able to create and delete categories for the website.
+    - As an Site Owner, I want to be able to do all of the above given the priveleges and permissions.
+    - As an Site Owner, I want to be able to see how many registered users are there for the website.
