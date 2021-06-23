@@ -1,2 +1,3 @@
 env.py
+*.py[cod]
 __pycache__/
