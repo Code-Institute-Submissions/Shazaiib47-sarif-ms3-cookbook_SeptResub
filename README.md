@@ -15,3 +15,18 @@
 9. [Credits](#credits)
 10. [Acknowledgements](#acknowledgements)
 11. [Disclaimer](#disclaimer)
+
+## Project Introduction <a name="introduction"></a>
+
+- ### Some Words of Mine...
+
+This project marks my 3rd Milestone on the road to becoming a Full Stack Developer, alongside with Code Institute. Many many obstacles had prevented me
+submitting this on time, as well as personal commitments and setbacks happened which had meant this project had to be put on standby as discussed with
+the Student Care Team at CI. I am not satisfied with where I had wanted this project to end up being like, but given my personal circumstances, the timeframe
+as well as my mental capacity, I could only do so much without the help of fellow students through Slack as well as my own personal mentor, Aaron Sinnott.
+
+This project was done without the help of these people and was done through tough times, however I am proud of continuing this given I was battling depression, anxiety
+as well as other factors that had affected my workrate through this milestone project. I am content with where it is but I myself will still continue updating this even 
+though I know the outcome of the project. I am aware of what will happen but I will continue to persevere and work my hardest through this. 
+
+Thank you for Reading.
