@@ -267,3 +267,22 @@ This project was deployed to github by following these steps below..
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 7. You have now deployed the project and this process is completed.
+
+### Heroku Deployment
+
+1. Create a requirements.txt file by using the CMD "pip3 freeze --local > requirements.txt" within the terminal. You will know this
+is successfull as a requirements.txt file will display in files on the left hand side.
+2. Create a ProcFile which can be done using the CMD "echo web: python app.py > Procfile. Followed by a git commit and git push.
+An important thing to note is, always use a uppercase P as this is the naming convention for this file.
+3. Navigate to [Heroku](www.heroku.com) and create an account with a valid unique username.
+4. Select your nearest deploy region.
+5. Create the new python project within the pipeline.
+6. Link the project through the means of your designated Github Repo within the deployment section of Heroku.
+7. Navigate to Heroku sesttings and reveal config vars in order to set up the following within the config vars.
+        - _IP = 0.0.0.0
+        - MONGO_DBNAME = [Name of your Database]
+        - MONGO_URI = mongodb+srv://:@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+        - PORT = 5000
+        - SECRET_KEY = [your_secret_key_here]
+8. Go back to deploy section whilst closing config vars and then select the master branch and deploy the project.
+9. You have now successfully deployed to Heroku!
