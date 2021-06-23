@@ -286,3 +286,5 @@ An important thing to note is, always use a uppercase P as this is the naming co
     - SECRET_KEY = [your_secret_key_here]
 8. Go back to deploy section whilst closing config vars and then select the master branch and deploy the project.
 9. You have now successfully deployed to Heroku!
+
+## Credits <a name="credits"></a>
