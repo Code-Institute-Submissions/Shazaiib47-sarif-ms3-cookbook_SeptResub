@@ -201,3 +201,14 @@ included within my project. I have tested the integrity myself to know there are
 
 [JSHint](https://jshint.com/)
 - This tool was used to validate the JavaScript file and to scan for any errors shown throughout the website.
+
+
+### Testing User Storiess from UX Section
+
+ - "As a unregistered user, I want to be able to see a page or a button that allows me to create an account."
+    - When a unregistered user first visits the website, they can see the nav which allows them to view the "Register" button.
+        When they click the button it gives the user to option to register an account.
+    
+    <h2 align="center"><img src="documentation/snapshots/register-unregistered.png"></h2>
+
+    <h2 align="center"><img src="documentation/snapshots/register-account.png"></h2>
