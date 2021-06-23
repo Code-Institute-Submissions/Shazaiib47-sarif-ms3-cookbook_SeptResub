@@ -174,6 +174,8 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
     7.  [jQuery](https://jquery.com/)
         - jQuery library was used to make HTML and the JS much easier to use and implement via their API.
             This made implementing event handling, animations and manipulating much easier.
+    9.  [MaterializeCSS]( https://materializecss.com/)
+        - Used this as a CSS and formatting framework to create responsive mobile first front-end design, Also responsible for Accordion and Carousel.
     8. [Autoprefixer CSS Online](https://autoprefixer.github.io/)
         - This was used to prefix my CSS that parses it and applies vendor fixes. Used this for the front-face image not showing on iOS Devices.
 
