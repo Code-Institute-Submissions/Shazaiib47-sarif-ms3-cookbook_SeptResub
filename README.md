@@ -253,7 +253,7 @@ included within my project. I have tested the integrity myself to know there are
 - This project was given to a friend to break in order to find website breaking bugs that would affect the usability of it,
     nothing was done to break and website performs as expected.
 
-### Known Bugs/Issues
+### Known Bugs/Issues/WIPs
 
 - When viewing the website on desktop but transitioning to mobile, the carousel glitches which may cause display and formatting issues,
     this may be due to the carousel not being able to render due to size of the device. But viewing the website from a handheld device directly
@@ -264,6 +264,11 @@ included within my project. I have tested the integrity myself to know there are
 
     - As you can see above, this is the problem that occurs, However when conferring with a friend as well as a Dev from CI, I have been told this is 
         expected as the website has not been hard loaded to showcase the mobile view. In a way this is not a bug but has been added as a disclaimer to some.
+
+- The profile page for users is incomplete. I had originally added some code but it took no effect. I am currently investigating this but as it currently stands, users cannot 
+    see their own recipe additions from the profile page. This is a Work in Progress.
+
+    <h2 align="center"><img src="documentation/snapshots/blank-profile.png"></h2>
 
 ## Deployment <a name="deployment"></a>
 
