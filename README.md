@@ -132,6 +132,8 @@ but I have kept the main goal of the wireframes in mind whilst developing the we
 
 - A button to "View All" recipes when desired recipe cannot be found, making it for easy access to view all recipes with the click of a button.
 
+- Full CRUD Functionality Implemented.
+
 ### Future Features to Implement
 
 - Profile page to be updated so it shows user's recipes. (This may be implemented soon.)
@@ -271,6 +273,8 @@ included within my project. I have tested the integrity myself to know there are
     see their own recipe additions from the profile page. This is a Work in Progress.
 
     <h2 align="center"><img src="documentation/snapshots/blank-profile.png"></h2>
+
+- Console Error appear on devtools when not logged in. This has happened with someone who created an account, added a test recipe. But upon viewing the recipe, all is fine, but the console error persists. This does not affect usability and the website performs as expected.
 
 ## Deployment <a name="deployment"></a>
 
