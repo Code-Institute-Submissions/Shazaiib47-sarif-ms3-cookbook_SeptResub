@@ -118,4 +118,22 @@ Comparing the live version to the wireframes, there are no huge changes, as the 
 as well as an alternate design if something was to not go my way. There are massive changes that impact the usability of the website,
 but I have kept the main goal of the wireframes in mind whilst developing the website.
 
-- Wireframes for the project can be found [here](documentation/ms3-wireframes-with-alternate-design.pdf)..
+- Wireframes for the project can be found [here](documentation/ms3-wireframes-with-alternate-design.pdf).
+
+## Features <a name="features"></a>
+
+- A website with full usability to search recipes within.
+
+- Responsive on desktop devices as well as handheld for on the go.
+
+- A dedicated page to create and edit a recipe when needs be.
+
+- A button to "View All" recipes when desired recipe cannot be found, making it for easy access to view all recipes with the click of a button.
+
+### Future Features to Implement
+
+- Profile page to be updated so it shows user's recipes. (This may be implemented soon.)
+
+- Another subheading to allow users to add Ingredients to make recipe aside from description only
+
+- The ability to share recipe on social links with added functionality.
