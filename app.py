@@ -17,8 +17,8 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
 # Code below gets the recipes for the "Home" page also known as "get_recipes"
+
 
 @app.route("/")
 @app.route("/get_recipes")
