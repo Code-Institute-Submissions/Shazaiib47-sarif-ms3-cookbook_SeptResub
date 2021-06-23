@@ -203,7 +203,7 @@ included within my project. I have tested the integrity myself to know there are
 - This tool was used to validate the JavaScript file and to scan for any errors shown throughout the website.
 
 
-### Testing User Storiess from UX Section
+### Testing Unregistered, Registered and Site Owner Stories from UX Section
 
  - "As a unregistered user, I want to be able to see a page or a button that allows me to create an account."
     - When a unregistered user first visits the website, they can see the nav which allows them to view the "Register" button.
