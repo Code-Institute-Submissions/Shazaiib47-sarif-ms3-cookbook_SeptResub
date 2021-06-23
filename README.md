@@ -286,6 +286,8 @@ the error code disappeared once the user was on the home page. It can therefore 
 
 - Console Error appear on devtools when not logged in. This has happened with someone who created an account, added a test recipe. But upon viewing the recipe, all is fine, but the console error persists. This does not affect usability and the website performs as expected.
 
+<h2 align="right"><img src="documentation/snapshots/console-log-after.png"></h2>
+
 ## Deployment <a name="deployment"></a>
 
 ### Github Pages
