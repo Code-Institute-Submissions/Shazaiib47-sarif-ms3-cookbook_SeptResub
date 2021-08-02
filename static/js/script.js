@@ -5,10 +5,11 @@ $(document).ready(function () {
     $('.sidenav').sidenav({
         edge: "right"
     });
-    /* Accordion Collapsible with Form, Date Pickerr as well as the tooltip */
+    /* Accordion Collapsible with Form, Date Picker as well as the tooltip */
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
     $('select').formSelect();
+    $('.modal').modal();
     $('.datepicker').datepicker({
         format: 'dd mmmm, yyyy',
         yearRange: 3,
@@ -17,7 +18,12 @@ $(document).ready(function () {
             done: "Select"
         }
     });
-    $('.modal').modal();
+    
+    var recipeAddedCurrent = $('#recipe_added_current').val();
+    console.log(recipeAddedCurrent);
+    var datepick = M.Datepicker.getInstance($('.datepicker'));
+    datepick.setDate(recipeAddedCurrent);
+    datepick.date(recipeAddedCurrent);
 
     /* Mobile Carousel Config */
     var mobileCarousel = $('.carousel-mobile.carousel.carousel-slider');
