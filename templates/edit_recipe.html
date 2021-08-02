@@ -12,7 +12,7 @@
                 <select id="recipe_category" name="recipe_category" class="validate" required>
                     <option value="" disabled>Choose A Category</option>
                     {% for category in categories %}
-                    {% if category.recipe_categories == recipe.recipe_categories %}
+                    {% if category.recipe_category == recipe.recipe_category %}
                     <option value="{{ category.recipe_category }}" selected>{{ category.recipe_category }}</option>
                     {% else %}
                     <option value="{{ category.recipe_category }}">{{ category.recipe_category }}</option>
@@ -119,8 +119,8 @@
     var datepick = M.Datepicker.getInstance($('.datepicker'));
     console.log(recipeAddedCurrent);
     console.log(datepick);
-    datepick.setDate(recipeAddedCurrent);
+    datepick.setDate(new Date(recipeAddedCurrent));
+    datepick.defaultDate(new Date(recipeAddedCurrent));
     });
-   // datepick.date(recipeAddedCurrent);
 </script>
 {% endblock %}
