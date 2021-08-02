@@ -18,12 +18,6 @@ $(document).ready(function () {
             done: "Select"
         }
     });
-    
-    var recipeAddedCurrent = $('#recipe_added_current').val();
-    console.log(recipeAddedCurrent);
-    var datepick = M.Datepicker.getInstance($('.datepicker'));
-    datepick.setDate(recipeAddedCurrent);
-    datepick.date(recipeAddedCurrent);
 
     /* Mobile Carousel Config */
     var mobileCarousel = $('.carousel-mobile.carousel.carousel-slider');
