@@ -107,3 +107,11 @@ h3 {
 .modal-content {
     background-color: red;
 }
+
+.datepicker-calendar-container {
+    background-color: white;
+}
+
+.datepicker-date-display {
+    background-color: red;
+}
