@@ -5,16 +5,17 @@
 # Table of Contents <a name="Home"></a>
 
 1. [Project Introduction](#introduction)
-2. [UX](#ux)
-3. [Design Choices](#designchoices)
-4. [Wireframes](#wireframes)
-5. [Features](#features)
-6. [Technologies Used](#techused)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
-10. [Acknowledgements](#acknowledgements)
-11. [Disclaimer](#disclaimer)
+2. [Change Log](#changelog)
+3. [UX](#ux)
+4. [Design Choices](#designchoices)
+5. [Wireframes](#wireframes)
+6. [Features](#features)
+7. [Technologies Used](#techused)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
+12. [Disclaimer](#disclaimer)
 
 ## Project Introduction <a name="introduction"></a>
 
@@ -50,6 +51,33 @@ enjoy oriental food and I hope to see a variety of recipes being uploaded by use
 To view my live project, please click on the link below. I hope you enjoy navigating through the great foods Tokyo has to offer!
 
 [View My Live Project Here!](https://sarif-ms3-cookbook.herokuapp.com/)
+
+# Changelog <a name="changelog"></a>
+
+Below you can find the list of changes that have been implemented in line with feedback recieved, as well as changes made that add more to the website theme:-
+
+
+1) *Python code does conform to the PEP8 style guide. HTML is invalid and has a number of issues as seen on https://validator.w3.org/nu/?doc=http%3A%2F%2Fsarif-ms3-cookbook.herokuapp.com%2Fget_recipes*
+
+In order to rectify this issue, I had opened the page locally to correct these changes as most of them included HTML issues such as no closing tags and other invalidity.
+
+This has now been fixed and evidence of this can be found in the commit history with the following snapshot added to show what that URL looks like now.
+
+<h2 align="center"><img src="./documentation/snapshots/html-checker-valid.png"></h2>
+
+2) *The colour contrast should be improved, eg: the date selector has dates that are hard to read due to poor colour contrast.*
+
+The date picker on the calender had a red background originally, which meant it was indeed hard to read given the contrast. Upon looking at this, I have reverted the change and have gone with the default calender look when adding a date.
+
+<h2 align="center"><img src="./documentation/snapshots/calender-picker.png"></h2>
+
+3) *Dates would not render and handle property. Would return back with "None" when updating a recipe.*
+
+This issue here revolved around CRUD, the recipe date not updating when a user navigates to update the recipe. This was amended by adding JS to populate the date chosen.
+
+Now when a user adds a recipe with their original date and then later goes on to updating the date, the original date should be populated but the new date should also be there too.
+
+<h2 align="center"><img src="./documentation/snapshots/date-populator.png"></h2>
 
 # User Experience (UX) <a name="ux"></a>
 
